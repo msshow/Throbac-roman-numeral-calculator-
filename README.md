@@ -1,42 +1,70 @@
-Description
-THROBAC is a Python console application that performs arithmetic operations using Roman numerals.
+Author:
+Moulaye Adama Sidibé
+THROBAC – Functional Roman Calculator
+November 2025 (Date of the Program)
+
+Description:
+THROBAC is a Python console-based Roman Numeral Calculator.
+This improved functional version restructures the original program into modular functions and adds full Roman numeral validation.
 
 The program:
 Converts Roman numerals to integers
-Performs arithmetic operations (+, −, ×, ÷)
+Performs arithmetic operations
 Converts results back to Roman numerals
-Handles quotient and remainder for division
-Validates results within a defined range (1–379)
+Validates Roman numeral rules
+Supports exponentiation
+Allows continuous calculations until user exits
 
 Features:
-Roman numeral to integer conversion
-Integer to Roman numeral conversion
+Roman Numeral Validation
+Valid Roman characters only (I, V, X, L, C, D, M)
+Repetition rule validation (no IIII, XXXX, etc.)
+Subtractive notation validation (IV, IX, XL, XC, CD, CM)
+Range validation (1–3999)
 
-Supports:
+Supported Operations:
 Addition (+)
 Subtraction (−)
 Multiplication (*)
-Division (// with remainder)
-Range validation (1 to 379)
-Clear console output
+Division (/ with quotient and remainder)
+Exponentiation (^)
 
-How to Run
+Program Structure:
+Fully modular design(multiple functions)
+Separate functions for:
+Conversion
+Validation
+Arithmetic operations
+Uses a main() function
+
+Loop-based execution until user quits
+
+How to Run:
 Requirements
 Python 3 installed
 
-Run the Program
+Run the Program:
 Open terminal in the project folder and run:
-python throbac.py
-Or (on Windows):
-py throbac.py
+python throbac_functional.py
+Or on Windows:
+py throbac_functional.py
 
-Example
-Enter First Roman Number(no spaces): X
-Enter Second Number(no spaces): V
-Operator: +
+Example:
+Enter first Roman Number(no spaces): X
+Enter second Roman Number(no spaces): V
+Enter an operator(+,-,/,^,*): +
 
 Output:
 Value of X: 10
 Value of V: 5
+Operator: +
 Digital sum is: 15
 Roman Sum is: XV
+
+Changes From Initial version:
+Code refactored into reusable functions
+Added Roman numeral validation rules
+Increased supported range to 3999
+Added exponentiation operator (^)
+Added loop for repeated calculations
+Improved program structure and readability
